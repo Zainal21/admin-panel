@@ -7,60 +7,121 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-## About Laravel
+## 📽️ About ADMIN PANEL
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+a simple application for managing data and providing it to a chart for statistics
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## 🌟 Getting Started
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
-## Learning Laravel
+## 🚀 Prerequiste
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+-   [Composer](https://getcomposer.org/) - Download and Install Composer
+-   Minimum PHP 8.2
+-   MySQL
+-   Yarn
+-   Docker (Optional)
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+## 🔑 Tools
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+-   Terminal (OhMyZSH)
+-   Code Editor : Visual Studio Code
+-   Web Server : NginX
+-   Database Server : MySQL
+-   GUI Database Management : DBeaver
+-   Container Management : Docker Desktop
 
-## Laravel Sponsors
+### 🖥️ Stacks
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+-   PHP 8.2
+-   Laravel 11
+-   MySQL
+-   InertiaJS
+-   React + TypeScript
+-   Docker (using Laravel Sail)
 
-### Premium Partners
+## 🚀 Installation And Usage
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+-   Run this command, to clone the project.
 
-## Contributing
+```
+git clone https://github.com/Zainal21/admin-panel
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+cd admin-panel
+```
 
-## Code of Conduct
+-   Run this command, to install dependency for running the application.
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+```
+composer install
+```
 
-## Security Vulnerabilities
+```
+yarn install
+```
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+-   Setup your env variable based on your environment
 
-## License
+```
+cp .env.example .env
+```
+
+-   Run this command, to migrate the database to your local machine.
+
+```
+:: Call Action to Migrate Database
+php artisan migrate --seed
+
+:: Create Secret Key Laravel App
+php artisan key:generate
+```
+
+-   Run this command, to running the application.
+
+```
+:: Command To Running Backend Service (Run Manually)
+php artisan serve
+
+:: Command To Running Frontend Service (Run Manually)
+yarn dev
+```
+
+-   Running using Laraval Sail (Docker - Recommended)
+
+```
+:: Command To Running Container
+./vendor/bin/sail up -d
+
+
+:: Command To Stop Container
+./vendor/bin/sail down
+
+
+:: Command To Run Laravel Artisan Command
+./vendor/bin/sail artisan ____
+```
+
+## 📷 API Resources
+
+-   Dashboard Charts
+    ![alt text](public/capture/chart.png)
+-   Manage Category
+    ![alt text](public/capture/category.png)
+
+-   Manage Item
+    ![alt text](public/capture/items.png)
+
+-   Manage Unit
+    ![alt text](public/capture/units.png)
+
+## 👤 Author
+
+-   Muhamad Zainal Arifin
+
+## 📝 License
+
+Copyright © 2024 Muhamad Zainal Arifin.
+This project is MIT licensed.
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).

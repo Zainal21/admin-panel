@@ -36,6 +36,7 @@ class CategoryItemService
             $statusCounts[$status][$category] = $totalUnits;
         }
 
+        // dd($statusCounts);
         $result = [];
 
         foreach ($allStatuses as $status) {
