@@ -102,7 +102,12 @@ yarn dev
 ./vendor/bin/sail artisan ____
 ```
 
-## 📷 API Resources
+## 📷 Screen Example
+
+-   Dummy User
+
+    -   email test@example.com
+    -   password : password
 
 -   Dashboard Charts
     ![alt text](public/capture/chart.png)
