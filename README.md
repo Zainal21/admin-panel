@@ -39,6 +39,9 @@ These instructions will get you a copy of the project up and running on your loc
 -   MySQL
 -   InertiaJS
 -   React + TypeScript
+-   React Hook Form
+-   React ApexChart, Zod Validation, and many more
+-   TailwindCSS
 -   Docker (using Laravel Sail)
 
 ## 🚀 Installation And Usage
