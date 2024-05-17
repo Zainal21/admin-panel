@@ -110,7 +110,7 @@ yarn dev
     -   password : password
 
 -   Dashboard Charts
-    ![alt text](public/capture/chart.png)
+    ![alt text](public/capture/charts.png)
 -   Manage Category
     ![alt text](public/capture/category.png)
 
